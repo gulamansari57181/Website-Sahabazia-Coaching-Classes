@@ -1,66 +1,66 @@
-    body {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-        font-size: 16px;
-    }
-    /* Navbar Start */
-    
-    .navbar-brand {
-        color: whitesmoke !important;
-        font-family: 'Style Script', cursive;
-        font-weight: bold;
-        font-style: italic;
-        font-size: 25px;
-    }
-    
-    .navbar-bg {
-        background-color: #001f3f!important;
-        border-bottom: 2px solid #63D82B;
-    }
-    
-    #navbarNav a {
-        color: #0eebd8 !important;
-    }
-    /* Start Of Slider */
-    /* Slider Height  */
-    
-    #carouselExampleIndicators .carousel-item img {
-        object-fit: cover;
-        object-position: center;
-        overflow: hidden;
-        height: 80vh;
-    }
-    /* Content on the slider */
-    
-    .carousel-caption {
-        position: absolute;
-        width: 60%;
-        top: 50%;
-        left: 0;
-        color: whitesmoke;
-    }
-    
-    .carousel-caption h1 {
-        height: fit-content;
-        width: fit-content;
-        font-size: 50px;
-        font-weight: bold;
-        margin-left: 20%;
-        line-height: 0.8;
-        letter-spacing: -0.5;
-        color: #fff;
-        font-family: Verdana, Geneva, Tahoma, sans-serif
-    }
-    
-    .carousel-caption h4 {
-        margin-top: 20px;
-        height: fit-content;
-        width: fit-content;
-        font-size: 20px;
-        margin-left: 20%;
-        line-height: 0.8;
-        letter-spacing: -0.5;
-        color: #fff;
-        font-family: Verdana, Geneva, Tahoma, sans-serif
-    }
+     body {
+         box-sizing: border-box;
+         margin: 0;
+         padding: 0;
+         font-size: 16px;
+     }
+     /* Navbar Start */
+     
+     .navbar-brand {
+         color: whitesmoke !important;
+         font-family: 'Style Script', cursive;
+         font-weight: bold;
+         font-style: italic;
+         font-size: 25px;
+     }
+     
+     .navbar-bg {
+         background-color: #001f3f!important;
+         border-bottom: 2px solid whitesmoke;
+     }
+     
+     #navbarNav a {
+         color: #0eebd8 !important;
+     }
+     /* Start Of Slider */
+     /* Slider Height  */
+     
+     #carouselExampleIndicators .carousel-item img {
+         object-fit: cover;
+         object-position: center;
+         overflow: hidden;
+         height: 90vh;
+     }
+     /* Content on the slider */
+     
+     .carousel-caption {
+         position: absolute;
+         width: 60%;
+         top: 50%;
+         left: 0;
+         color: whitesmoke;
+     }
+     
+     .carousel-caption h1 {
+         height: fit-content;
+         width: fit-content;
+         font-size: 50px;
+         font-weight: bold;
+         margin-left: 20%;
+         line-height: 0.8;
+         letter-spacing: -0.5;
+         color: #fff;
+         font-family: Verdana, Geneva, Tahoma, sans-serif
+     }
+     
+     .carousel-caption h4 {
+         margin-top: 20px;
+         height: fit-content;
+         width: fit-content;
+         font-size: 20px;
+         margin-left: 20%;
+         line-height: 0.8;
+         letter-spacing: -0.5;
+         color: #fff;
+         font-family: Verdana, Geneva, Tahoma, sans-serif
+     }
