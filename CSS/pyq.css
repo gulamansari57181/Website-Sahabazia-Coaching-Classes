@@ -1,0 +1,100 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    background: #000000;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #0eebd8;
+}
+
+
+/* Navbar Start */
+
+.navbar-brand {
+    color: whitesmoke !important;
+    font-family: 'Style Script', cursive;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 25px;
+}
+
+.navbar-bg {
+    background-color: #001f3f!important;
+    border-bottom: 2px solid whitesmoke;
+}
+
+#navbarNav a {
+    color: #0eebd8 !important;
+}
+
+
+/* Title Heading */
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    text-align: center;
+    height: 250px;
+    background-image: url(/Images/pyq-watch.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text-heading {
+    font-weight: bold;
+    font-size: 5vw;
+    text-align: center;
+    line-height: 0.8;
+    letter-spacing: -0.5;
+    color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+
+/* Tenth Standard PYQ Table */
+
+.tenth-class {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.tenth-class strong {
+    font-size: 4vw;
+}
+
+table,
+th,
+td {
+    border: 2px solid whitesmoke;
+    border-collapse: collapse;
+    width: auto;
+}
+
+th,
+td {
+    padding: 5px;
+    text-align: center;
+}
+
+
+/* Footer */
+
+.page-footer {
+    background: #8E2DE2;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4A00E0, #8E2DE2);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: whitesmoke;
+}
