@@ -1,105 +1,115 @@
 body {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-size: 16px;
-    background: #D3CCE3;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #E9E4F0, #D3CCE3);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color: #001f3f;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  background: #d3cce3;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #e9e4f0, #d3cce3);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #e9e4f0, #d3cce3);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #0f0f0f;
 }
 
-
 /* Navbar Start */
+.navbar-container {
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+}
 
 .navbar-brand {
-    color: whitesmoke !important;
-    font-family: 'Style Script', cursive;
-    font-weight: bold;
-    font-style: italic;
-    font-size: 25px;
+  color: whitesmoke !important;
+  font-family: "Style Script", cursive;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 25px;
 }
 
 .navbar-bg {
-    background-color: #001f3f!important;
-    border-bottom: 2px solid whitesmoke;
+  background-color: #880569 !important;
+  border-bottom: 2px solid whitesmoke;
 }
 
 #navbarNav a {
-    color: #0eebd8 !important;
+  color: whitesmoke !important;
 }
-
 
 /* Title Heading */
 
 .heading {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0;
-    text-align: center;
-    height: 250px;
-    background-image: url(/Images/math-1500720_1280.jpg);
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  text-align: center;
+  height: 250px;
+  background-image: url(/Images/math-1500720_1280.jpg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .text-heading {
-    font-weight: bold;
-    font-size: 5vw;
-    text-align: center;
-    line-height: 0.8;
-    letter-spacing: -0.5;
-    color: whitesmoke;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+  font-weight: bold;
+  font-size: 5vw;
+  text-align: center;
+  line-height: 0.8;
+  letter-spacing: -0.5;
+  color: whitesmoke;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
 
 /* Tenth Standard PYQ Table */
 
-.tenth-class {
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    text-align: center;
+.table-container {
+  margin: 30px;
+  text-align: center;
+}
+.table-caption {
+  padding-bottom: 10px;
 }
 
-.tenth-class strong {
-    font-size: 4vw;
+.table-container strong {
+  font-weight: bolder;
+  font-size: 4.5vw;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-transform: uppercase;
+  color: #0f0f0f;
+  border-bottom: 8px solid #880569;
+  border-radius: 3px;
 }
 
 table,
 th,
 td {
-    border: 4px solid #0f0f0f;
-    border-collapse: collapse;
-    width: auto;
+  border: 2px solid #0f0f0f;
+  border-collapse: collapse;
+  width: auto;
 }
 
 th,
 td {
-    padding: 5px;
-    text-align: center;
+  padding: 5px;
+  text-align: center;
+  font-weight: bold;
 }
 
 th {
-    background-color: #0eebd8;
-    color: #001f3f;
+  background-color: #8e2de2;
+  color: whitesmoke;
 }
-
 
 /* Footer */
 
 .page-footer {
-    background: #8E2DE2;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #4A00E0, #8E2DE2);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color: whitesmoke;
+  background: #8e2de2;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4a00e0, #8e2de2);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4a00e0, #8e2de2);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: whitesmoke;
 }

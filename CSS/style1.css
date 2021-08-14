@@ -1,77 +1,188 @@
-     body {
-         box-sizing: border-box;
-         margin: 0;
-         padding: 0;
-         font-size: 16px;
-     }
-     /* Navbar Start */
-     
-     .navbar-brand {
-         color: whitesmoke !important;
-         font-family: 'Style Script', cursive;
-         font-weight: bold;
-         font-style: italic;
-         font-size: 25px;
-     }
-     
-     .navbar-bg {
-         background-color: #001f3f!important;
-         border-bottom: 2px solid whitesmoke;
-     }
-     
-     #navbarNav a {
-         color: #0eebd8 !important;
-     }
-     /* Start Of Slider */
-     /* Slider Height  */
-     
-     #carouselExampleIndicators .carousel-item img {
-         object-fit: cover;
-         object-position: center;
-         overflow: hidden;
-         height: 90vh;
-     }
-     /* Content on the slider */
-     
-     .carousel-caption {
-         position: absolute;
-         width: 60%;
-         top: 50%;
-         left: 0;
-         color: whitesmoke;
-     }
-     
-     .carousel-caption h1 {
-         height: fit-content;
-         width: fit-content;
-         font-size: 50px;
-         font-weight: bold;
-         margin-left: 20%;
-         line-height: 0.8;
-         letter-spacing: -0.5;
-         color: #fff;
-         font-family: Verdana, Geneva, Tahoma, sans-serif
-     }
-     
-     .carousel-caption h4 {
-         margin-top: 20px;
-         height: fit-content;
-         width: fit-content;
-         font-size: 20px;
-         margin-left: 20%;
-         line-height: 0.8;
-         letter-spacing: -0.5;
-         color: #fff;
-         font-family: Verdana, Geneva, Tahoma, sans-serif
-     }
-     /* Footer */
-     
-     .page-footer {
-         background: #8E2DE2;
-         /* fallback for old browsers */
-         background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
-         /* Chrome 10-25, Safari 5.1-6 */
-         background: linear-gradient(to right, #4A00E0, #8E2DE2);
-         /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-         color: whitesmoke;
-     }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  background: #d3cce3;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #e9e4f0, #d3cce3);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #e9e4f0, #d3cce3);
+}
+/* Navbar Start */
+.navbar-container {
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+}
+
+.navbar-brand {
+  color: whitesmoke !important;
+  font-family: "Style Script", cursive;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 25px;
+}
+
+.navbar-bg {
+  background-color: #880569 !important;
+  border-bottom: 2px solid whitesmoke;
+}
+
+#navbarNav a {
+  color: whitesmoke !important;
+}
+/* Start Of Slider */
+/* Slider Height  */
+
+#carouselExampleIndicators .carousel-item img {
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+  height: 90vh;
+}
+/* Content on the slider */
+
+.carousel-caption {
+  position: absolute;
+  width: 60%;
+  top: 40%;
+  left: 0;
+  color: whitesmoke;
+}
+
+.carousel-caption h1 {
+  height: fit-content;
+  width: fit-content;
+  font-size: 50px;
+  font-weight: bold;
+  margin-left: 20%;
+  line-height: 0.8;
+  letter-spacing: -0.5;
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.carousel-caption h4 {
+  margin-top: 20px;
+  height: fit-content;
+  width: fit-content;
+  font-size: 20px;
+  margin-left: 20%;
+  line-height: 0.8;
+  letter-spacing: -0.5;
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Subject Container */
+
+.subject-heading {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.subject-heading h1 {
+  position: relative;
+  font-weight: bolder;
+  font-size: 4.5vw;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-transform: uppercase;
+  color: #0f0f0f;
+  border-bottom: 8px solid #880569;
+  border-radius: 3px;
+}
+
+.subject-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: 100px;
+}
+.card {
+  position: relative;
+  left: -6%;
+  width: 360px;
+  height: 350px;
+  transition: 0.3s ease-out;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.7);
+  margin: 30px;
+}
+.card .image-box {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.card .image-box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  display: block;
+  transition: 0.5s;
+}
+.card .content {
+  position: absolute;
+  background: #880569;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  padding: 12px;
+  transition: all 0.5s cubic-bezier(0.48, -0.28, 0.41, 1.4);
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.card .content h1 {
+  text-align: center;
+  color: whitesmoke;
+}
+
+.card:hover .content {
+  width: 100%;
+  height: 75%;
+  left: 0;
+  bottom: 0;
+}
+.content {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.content p {
+  color: whitesmoke;
+  margin: 10px 0 0;
+  padding: 1em 1em;
+  transform: translateY(2em);
+  line-height: 1.3em;
+  transition: 0.3s;
+  text-align: center;
+  opacity: 0;
+}
+.card:hover .content p {
+  transform: translateY(0);
+  opacity: 1;
+}
+.card:hover {
+  box-shadow: 0 0 5em rgba(0, 0, 0, 0.4);
+}
+
+/* Footer */
+
+.page-footer {
+  background: #8e2de2;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4a00e0, #8e2de2);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4a00e0, #8e2de2);
+  color: whitesmoke;
+}
