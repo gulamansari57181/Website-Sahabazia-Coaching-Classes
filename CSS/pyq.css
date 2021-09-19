@@ -29,7 +29,7 @@ body {
 }
 
 .navbar-bg {
-  background-color: #880569 !important;
+  background-color: #8e2de2 !important;
   border-bottom: 2px solid whitesmoke;
 }
 
@@ -78,7 +78,7 @@ body {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   text-transform: uppercase;
   color: #0f0f0f;
-  border-bottom: 8px solid #880569;
+  border-bottom: 8px solid #8e2de2;
   border-radius: 3px;
 }
 

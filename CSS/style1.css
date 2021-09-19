@@ -9,6 +9,7 @@ body {
   padding: 0;
   font-size: 16px;
   background: #d3cce3;
+  color: whitesmoke;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #e9e4f0, #d3cce3);
   /* Chrome 10-25, Safari 5.1-6 */
@@ -29,9 +30,8 @@ body {
   font-style: italic;
   font-size: 25px;
 }
-
 .navbar-bg {
-  background-color: #880569 !important;
+  background-color: #8e2de2 !important;
   border-bottom: 2px solid whitesmoke;
 }
 
@@ -54,7 +54,6 @@ body {
   width: 60%;
   top: 40%;
   left: 0;
-  color: whitesmoke;
 }
 
 .carousel-caption h1 {
@@ -65,7 +64,7 @@ body {
   margin-left: 20%;
   line-height: 0.8;
   letter-spacing: -0.5;
-  color: #fff;
+
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -77,43 +76,43 @@ body {
   margin-left: 20%;
   line-height: 0.8;
   letter-spacing: -0.5;
-  color: #fff;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* Subject Container */
 
-.subject-heading {
+.heading {
   display: flex;
   justify-content: center;
-  margin-top: 40px;
+  margin-top: 30px;
 }
-.subject-heading h1 {
+.heading h1 {
   position: relative;
-  font-weight: bolder;
-  font-size: 4.5vw;
+  font-size: 5vw;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  text-transform: uppercase;
-  color: #0f0f0f;
-  border-bottom: 8px solid #880569;
-  border-radius: 3px;
+  text-transform: capitalize;
+  color: #22577a;
+  border-bottom: 0.2em solid #8e2de2;
+  border-radius: 5px;
 }
 
 .subject-container {
+  border-radius: 50px;
+  background: linear-gradient(145deg, #cacaca, #f0f0f0);
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-left: 100px;
 }
 .card {
   position: relative;
-  left: -6%;
   width: 360px;
   height: 350px;
+
   transition: 0.3s ease-out;
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.7);
-  margin: 30px;
+  margin: 35px;
 }
 .card .image-box {
   position: relative;
@@ -133,7 +132,7 @@ body {
 }
 .card .content {
   position: absolute;
-  background: #880569;
+  background: #8e2de2;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -145,7 +144,8 @@ body {
 }
 .card .content h1 {
   text-align: center;
-  color: whitesmoke;
+
+  font-style: italic;
 }
 
 .card:hover .content {
@@ -159,7 +159,6 @@ body {
 }
 
 .content p {
-  color: whitesmoke;
   margin: 10px 0 0;
   padding: 1em 1em;
   transform: translateY(2em);
@@ -176,6 +175,39 @@ body {
   box-shadow: 0 0 5em rgba(0, 0, 0, 0.4);
 }
 
+/* Why choose us heading */
+
+.choose-us {
+  width: 100%;
+  height: fit-content;
+  /* Specification images to make responsive */
+}
+.specification-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.specification-img {
+  border: 5px solid whitesmoke;
+  border-radius: 5%;
+  border-radius: 50px;
+  background: linear-gradient(145deg, #8e2de2, #8e2de2);
+  box-shadow: 1px 1px 10px #8e2de2, -1px -1px 10px #8e2de2;
+  margin: 30px;
+  padding: 10px;
+}
+
+.specification-img img {
+  height: 40vh;
+  width: 25vw;
+  align-items: center;
+  justify-content: center;
+}
+.specification-img h5 {
+  margin-left: 30px;
+}
+
 /* Footer */
 
 .page-footer {
@@ -184,5 +216,4 @@ body {
   background: -webkit-linear-gradient(to right, #4a00e0, #8e2de2);
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #4a00e0, #8e2de2);
-  color: whitesmoke;
 }
