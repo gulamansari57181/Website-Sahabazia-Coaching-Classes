@@ -4,16 +4,14 @@
   padding: 0;
 }
 body {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
   font-size: 16px;
-  background: #d3cce3;
+  background: #cacaca;
   color: whitesmoke;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #e9e4f0, #d3cce3);
+  background: -webkit-linear-gradient(145deg, #cacaca, #f0f0f0);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #e9e4f0, #d3cce3);
+  background: linear-gradient(145deg, #cacaca, #f0f0f0);
+  scroll-behavior: smooth;
 }
 /* Navbar Start */
 .navbar-container {
@@ -26,7 +24,6 @@ body {
 .navbar-brand {
   color: whitesmoke !important;
   font-family: "Style Script", cursive;
-  font-weight: bold;
   font-style: italic;
   font-size: 25px;
 }
@@ -84,22 +81,20 @@ body {
 .heading {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
+  margin: 30px;
 }
 .heading h1 {
   position: relative;
-  font-size: 5vw;
+  font-size: 8vh;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   text-transform: capitalize;
-  color: #22577a;
-  border-bottom: 0.2em solid #8e2de2;
-  border-radius: 5px;
+  color: #0f0f0f;
+  border-bottom: 1vh solid #8e2de2;
+  border-radius: 3px;
 }
 
 .subject-container {
   border-radius: 50px;
-  background: linear-gradient(145deg, #cacaca, #f0f0f0);
-  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -180,20 +175,21 @@ body {
 .choose-us {
   width: 100%;
   height: fit-content;
+
   /* Specification images to make responsive */
 }
 .specification-container {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  background-color: #8e2de2;
+
   justify-content: center;
 }
 .specification-img {
   border: 5px solid whitesmoke;
   border-radius: 5%;
-  border-radius: 50px;
-  background: linear-gradient(145deg, #8e2de2, #8e2de2);
-  box-shadow: 1px 1px 10px #8e2de2, -1px -1px 10px #8e2de2;
+
   margin: 30px;
   padding: 10px;
 }
@@ -213,7 +209,7 @@ body {
 .page-footer {
   background: #8e2de2;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #4a00e0, #8e2de2);
+  background: -webkit-linear-gradient(to right, #8e2de2, #734ac5);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #4a00e0, #8e2de2);
+  background: linear-gradient(to right, #8e2de2, #734ac5);
 }
