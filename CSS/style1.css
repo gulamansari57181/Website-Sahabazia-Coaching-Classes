@@ -8,18 +8,21 @@ body {
   font-size: 16px;
   overflow-x: hidden;
   color: whitesmoke;
+
+  background-color: #d5fefd;
+  background-image: linear-gradient(315deg, #d5fefd 0%, #fffcff 74%);
 }
 /* Navbar Start */
 .navbar-container {
   position: sticky;
   z-index: 1;
+  margin-top: 1px;
   top: 0;
   width: 100%;
 }
 
 .navbar-brand {
   color: whitesmoke !important;
-
   font-style: italic;
   font-size: 25px;
 }
@@ -30,6 +33,11 @@ body {
 
 #navbarNav a {
   color: whitesmoke !important;
+}
+
+.navbar-toggler-icon {
+  border: 2px solid white;
+  border-radius: 5px;
 }
 /* Start Of Slider */
 /* Slider Height  */
@@ -178,20 +186,18 @@ body {
   flex-wrap: wrap;
   align-items: center;
   background-color: #8e2de2;
-
   justify-content: center;
 }
 .specification-img {
   border: 5px solid whitesmoke;
   border-radius: 5%;
-
-  margin: 30px;
+  margin: 25px;
   padding: 10px;
 }
 
 .specification-img img {
   height: 40vh;
-  width: fit-content;
+  width: auto;
   align-items: center;
   justify-content: center;
 }
@@ -220,11 +226,21 @@ body {
   align-items: center;
   border: 3px solid #8e2de2;
   border-radius: 20px;
-  background-color: whitesmoke;
+
   font-family: "Arvo", serif;
   font-size: 3vw;
   font-weight: bold;
 }
+/* End of our achievements */
+
+/* Testimonial CSS*/
+.section {
+  position: relative;
+  width: 100%;
+  height: ;
+}
+
+/* End of testimonial */
 
 /* Footer */
 
