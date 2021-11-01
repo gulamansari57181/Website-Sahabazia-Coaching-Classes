@@ -3,6 +3,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 body {
   font-size: 16px;
@@ -32,11 +33,15 @@ body {
 }
 
 #navbarNav a {
+  font-family: "Arvo", serif;
   color: whitesmoke !important;
 }
 
+#navbarNav a:hover {
+  border-bottom: 3px solid whitesmoke;
+}
 .navbar-toggler-icon {
-  border: 2px solid white;
+  border: 2px solid whitesmoke;
   border-radius: 5px;
 }
 /* Start Of Slider */
@@ -106,8 +111,8 @@ body {
 }
 .card {
   position: relative;
-  width: 360px;
-  height: 350px;
+  width: 320px;
+  height: 280px;
 
   transition: 0.3s ease-out;
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.7);
@@ -185,12 +190,13 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  font-family: "Arvo", serif;
   background-color: #8e2de2;
   justify-content: center;
 }
 .specification-img {
   border: 5px solid whitesmoke;
-  border-radius: 5%;
+  border-radius: 8%;
   margin: 25px;
   padding: 10px;
 }
@@ -237,7 +243,12 @@ body {
 .section {
   position: relative;
   width: 100%;
-  height: ;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+  overflow: hidden;
 }
 
 /* End of testimonial */
@@ -245,6 +256,7 @@ body {
 /* Footer */
 
 .page-footer {
+  font-family: "Arvo", serif;
   background: #8e2de2;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #8e2de2, #734ac5);
