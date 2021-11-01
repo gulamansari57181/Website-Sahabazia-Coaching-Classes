@@ -7,6 +7,14 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <!-- FontAwsome Icons -->
     <link
       rel="stylesheet"
@@ -19,12 +27,14 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-
-    <!-- swiper slider -->
     <link
       rel="stylesheet"
-      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.css"
+      integrity="sha512-QbdyHQ4u/kGxcvKqhKEhmWCbo7N9XX30SPzf3oTpBGyot0buywJnX7J49JG7wWlS2A76a/QrXpuKZQKl4m5nSA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
+
     <link rel="stylesheet" href="/CSS/style1.css" />
     <title>SSC</title>
   </head>
@@ -52,11 +62,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="index.html">
                 <i class="fa fa-clock-o"></i> Timing: 6AM - 10AM
-                <span class="sr-only">(current)</span></a
-              >
+              </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#"
@@ -104,8 +113,8 @@
             alt="First slide"
           />
           <div class="carousel-caption d-none d-md-block">
-            <h1 style="color: #8e2de2">Educate A Child</h1>
-            <h1 style="color: #8e2de2">To Turn Wall Into Doors</h1>
+            <h1 style="color: #007aff">Educate A Child</h1>
+            <h1 style="color: #007aff">To Turn Wall Into Doors</h1>
             <h4 style="color: #06181f">
               Education is the vaccine for violence.
             </h4>
@@ -160,7 +169,7 @@
     <!-- Subjects We Taught -->
 
     <div class="heading">
-      <h1>Subjects We Uncover</h1>
+      <h1>Subjects We Uncover <span class="section-separator"></span></h1>
     </div>
 
     <div class="subject-container">
@@ -231,7 +240,7 @@
     <!-- Why Choose Us Section -->
     <div class="choose-us">
       <div class="heading">
-        <h1>Why Choose Us</h1>
+        <h1>Why Choose Us <span class="section-separator"></span></h1>
       </div>
       <div class="specification-container">
         <div class="specification-img">
@@ -259,7 +268,155 @@
 
     <!-- Testimonial -->
 
-    <div class="section"></div>
+    <section>
+      <div class="container">
+        <div class="section-title">
+          <h2>What Our Students Say</h2>
+          <span class="section-separator"></span>
+        </div>
+        <div class="testimonials-carousel-wrap">
+          <div class="listing-carousel-button listing-carousel-button-next">
+            <i class="fa fa-caret-right" style="color: #fff"></i>
+          </div>
+          <div class="listing-carousel-button listing-carousel-button-prev">
+            <i class="fa fa-caret-left" style="color: #fff"></i>
+          </div>
+          <div class="testimonials-carousel">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="testi-item">
+                    <div class="testimonials-text-before">
+                      <i class="fa fa-quote-right"></i>
+                    </div>
+                    <div class="testimonials-text">
+                      <div class="listing-rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <p>
+                        Best explanation by Jilani Sir. Haven't met a teacher
+                        like him before.Extremely passionate and hardworking
+                        towards his work.You are an inspiration for us.
+                      </p>
+                      <div class="testimonials-avatar">
+                        <h3>Ahmad Raza</h3>
+                        <h4>Student</h4>
+                      </div>
+                    </div>
+                    <div class="testimonials-text-after">
+                      <i class="fa fa-quote-left"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <!--second--->
+                <div class="swiper-slide">
+                  <div class="testi-item">
+                    <div class="testimonials-text-before">
+                      <i class="fa fa-quote-right"></i>
+                    </div>
+                    <div class="testimonials-text">
+                      <div class="listing-rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <p>
+                        He explain the reason behind each and every problem in
+                        HINDI(my mother tongue). His efforts are priceless.He
+                        explain each and every topic with such a fun and
+                        intresting manner that it stays in our head for long
+                        time.
+                      </p>
+
+                      <div class="testimonials-avatar">
+                        <h3>Ghazali Ansari</h3>
+                        <h4>Student</h4>
+                      </div>
+                    </div>
+                    <div class="testimonials-text-after">
+                      <i class="fa fa-quote-left"></i>
+                    </div>
+                  </div>
+                </div>
+                <!--third-->
+
+                <div class="swiper-slide">
+                  <div class="testi-item">
+                    <div class="testimonials-text-before">
+                      <i class="fa fa-quote-right"></i>
+                    </div>
+                    <div class="testimonials-text">
+                      <div class="listing-rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <p>
+                        Our village rarely have a teacher like him. The amount
+                        of effort he is putting for educational enhancement of
+                        our village kids is tuely extraordinary and
+                        astoinishing.
+                      </p>
+
+                      <div class="testimonials-avatar">
+                        <h3>Kaif Ansari</h3>
+                        <h4>Student</h4>
+                      </div>
+                    </div>
+                    <div class="testimonials-text-after">
+                      <i class="fa fa-quote-left"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <!--fourth-->
+                <div class="swiper-slide">
+                  <div class="testi-item">
+                    <div class="testimonials-text-before">
+                      <i class="fa fa-quote-right"></i>
+                    </div>
+                    <div class="testimonials-text">
+                      <div class="listing-rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <p>
+                        The best teacher that I know. My son is now more mature
+                        and knowledgeable. He improved the overall personality
+                        of my son.
+                      </p>
+
+                      <div class="testimonials-avatar">
+                        <h3>Haji Tajuddin</h3>
+                        <h4>Parents</h4>
+                      </div>
+                    </div>
+                    <div class="testimonials-text-after">
+                      <i class="fa fa-quote-left"></i>
+                    </div>
+                  </div>
+                </div>
+                <!--testi end-->
+              </div>
+            </div>
+          </div>
+
+          <div class="tc-pagination"></div>
+        </div>
+      </div>
+    </section>
 
     <!-- End Of Testimonial -->
 
@@ -353,22 +510,13 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="JS/script.js"></script>
   </body>
 </html>
