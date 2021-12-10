@@ -6,8 +6,8 @@
 }
 body {
   font-size: 16px;
-  overflow-x: hidden;
   color: whitesmoke;
+  overflow-x: hidden !important;
 
   background-color: #d5fefd;
   background-image: linear-gradient(315deg, #d5fefd 0%, #fffcff 74%);

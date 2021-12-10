@@ -183,7 +183,8 @@ body {
 /* Why choose us heading */
 
 .choose-us {
-  width: 100vw;
+  overflow-x: hidden !important;
+  /* width: 100vw; */
   height: fit-content;
 }
 /* Specification images to make responsive */
@@ -203,7 +204,7 @@ body {
 }
 
 .specification-img img {
-  height: 40vh;
+  height: 35vh;
   width: auto;
   align-items: center;
   justify-content: center;
@@ -431,7 +432,9 @@ section {
   transform: scale(1);
 }
 .tc-pagination {
-  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 10px;
   width: 100% !important;
 }
