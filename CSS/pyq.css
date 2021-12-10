@@ -96,10 +96,12 @@ td {
 }
 
 th,
-td {
+td,
+a {
   padding: 5px;
   text-align: center;
   font-weight: bold;
+  color: #0f0f0f;
 }
 
 th {
