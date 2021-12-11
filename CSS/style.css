@@ -179,6 +179,7 @@ body {
 .card:hover {
   box-shadow: 0 0 2em rgba(0, 0, 1, 0.2);
 }
+/* End of subjects we uncover */
 
 /* Why choose us heading */
 
@@ -247,6 +248,7 @@ section {
   position: relative;
   padding: 30px 0;
   background-color: ghostwhite;
+
   z-index: 1;
   width: 100%;
 }
@@ -257,11 +259,13 @@ section {
   padding-bottom: 40px;
 }
 .section-title p {
+  text-align: center;
   color: #cee3fa;
-  font-size: 13px;
+  font-size: 3.5vh;
   line-height: 20px;
   max-width: 550px;
   margin: 0 auto;
+  font-family: "Arvo", serif;
 }
 .section-title h2 {
   float: left;
@@ -294,38 +298,7 @@ section {
   width: 100%;
   height: 100%;
 }
-.listing-carousel-button {
-  position: absolute;
-  top: 50%;
-  width: 80px;
-  height: 50px;
-  line-height: 50px;
-  margin-top: -25px;
-  z-index: 100;
-  cursor: pointer;
-  background: #007aff;
-  box-shadow: 0 9px 26px rgba(67, 132, 236, 0.45);
-  transition: all 200ms linear;
-  outline: none;
-}
-.listing-carousel-button.listing-carousel-button-next {
-  right: -30px;
-  padding-right: 20px;
-  border-radius: 60px 0 0 60px;
-}
-.listing-carousel-button.listing-carousel-button-prev {
-  left: -30px;
-  padding-left: 20px;
-  border-radius: 0 60px 60px 0;
-}
-.listing-carousel-button.listing-carousel-button-next:hover {
-  right: -15px;
-  background: rgba(6, 27, 65, 0.4);
-}
-.listing-carousel-button.listing-carousel-button-prev:hover {
-  left: -15px;
-  background: rgba(6, 27, 65, 0.4);
-}
+
 .testi-item {
   transition: all 0.3s ease-in-out;
   transform: scale(0.9);
@@ -344,7 +317,7 @@ section {
   font-weight: normal;
   text-decoration: inherit;
   position: absolute;
-  color: #ccc;
+  color: #007aff;
   opacity: 0.3;
   font-size: 35px;
   transition: all 400ms linear;
@@ -356,7 +329,7 @@ section {
   font-weight: normal;
   text-decoration: inherit;
   position: absolute;
-  color: #ccc;
+  color: #007aff;
   opacity: 0.3;
   font-size: 35px;
   transition: all 400ms linear;
@@ -385,23 +358,6 @@ section {
 .testimonials-carousel .swiper-slide {
   padding: 30px 0;
 }
-.testi-avatar {
-  position: absolute;
-  left: 50%;
-  top: -30px;
-  width: 90px;
-  height: 90px;
-  margin-left: -45px;
-  z-index: 20;
-}
-.testi-avatar img {
-  width: 90px;
-  height: 90px;
-  float: left;
-  border-radius: 100%;
-  border: 6px solid whitesmoke;
-  box-shadow: 0 9px 26px rgba(58, 87, 135, 0.1);
-}
 .swiper-slide-active .testimonials-text {
   background: whitesmoke;
   box-shadow: 0 9px 26px rgba(58, 87, 135, 0.1);
@@ -415,18 +371,7 @@ section {
   padding-bottom: 10px;
   font-weight: 500;
 }
-.text-link {
-  position: absolute;
-  bottom: 0;
-  padding: 15px 0;
-  border-radius: 10px 10px 0 0;
-  background: #f9f9f9;
-  border: 1px solid #eee;
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.03);
-  left: 50%;
-  width: 200px;
-  margin-left: -100px;
-}
+
 .swiper-slide-active .testi-item {
   opacity: 1;
   transform: scale(1);
@@ -435,7 +380,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
+  margin-top: -10px;
   width: 100% !important;
 }
 .tc-pagination_wrap {
@@ -456,7 +401,7 @@ section {
 .tc-pagination .swiper-pagination-bullet,
 .tc-pagination2.swiper-pagination-bullet {
   opacity: 1;
-  background: #384f95;
+  background: #007aff;
   margin: 0 2px;
   width: 10px;
   height: 10px;
