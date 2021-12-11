@@ -7,10 +7,9 @@
 }
 body {
   font-size: 16px;
+  overflow-x: hidden;
   color: whitesmoke;
-
-  background-color: #d5fefd;
-  background-image: linear-gradient(315deg, #d5fefd 0%, #fffcff 74%);
+  background-color: ghostwhite;
 }
 /* Navbar Start */
 .navbar-container {
@@ -35,9 +34,8 @@ body {
 }
 
 #navbarNav a {
-  font-family: "Arvo", serif !important;
+  font-family: "Arvo", serif;
   color: whitesmoke !important;
-  font-style: italic;
 }
 
 #navbarNav a:hover {
@@ -128,14 +126,13 @@ td {
   width: auto;
 }
 
-th,
-td,
-a {
+th,td{
   padding: 5px;
   text-align: center;
   font-weight: bold;
   color: #0f0f0f;
 }
+
 td a {
   color: #007aff;
 }
@@ -159,4 +156,4 @@ th {
 }
 .page-footer a {
   color: whitesmoke;
-}
+} */

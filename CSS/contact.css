@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 16px;
+  overflow-x: hidden;
+  color: whitesmoke;
+  background-color: ghostwhite;
+}
+/* Navbar Start */
+.navbar-container {
+  position: sticky;
+  z-index: 2;
+  margin-top: 1px;
+  top: 0;
+  width: 100%;
+}
+
+.navbar-brand {
+  color: whitesmoke !important;
+  font-style: italic;
+  font-size: 25px;
+}
+.navbar-bg {
+  background-color: #007aff !important;
+  border-bottom: 2px solid whitesmoke;
+}
+.nav-item {
+  padding: 0 15px;
+}
+
+#navbarNav a {
+  font-family: "Arvo", serif;
+  color: whitesmoke !important;
+}
+
+#navbarNav a:hover {
+  border-bottom: 3px solid whitesmoke;
+}
+.navbar-toggler-icon {
+  border: 2px solid whitesmoke;
+  border-radius: 5px;
+}
+/* End of Navbar */
+
+/* Title Heading */
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  text-align: center;
+  height: 250px;
+  background-image: url(/Images/contact-us.jpg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h1 {
+  float: left;
+  width: 100%;
+  text-align: center;
+  color: #007aff;
+  font-size: 40px;
+  font-weight: 800;
+  position: relative;
+}
+.section-separator {
+  float: left;
+  width: 100%;
+  position: relative;
+  margin: 15px 0;
+}
+.section-separator:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  height: 3px;
+  width: 50px;
+  border-radius: 3px;
+  z-index: 2;
+  background-color: #007aff;
+  margin-left: -25px;
+}
+
+.text-heading {
+  font-weight: bold;
+  font-size: 5vw;
+  text-align: center;
+  line-height: 0.8;
+  letter-spacing: -0.5;
+  color: whitesmoke;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* End of top heading */
+/* Contact us section */
+.contact {
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url(contact.jpg);
+  background-size: cover;
+}
+.contact .content {
+  max-width: 800px;
+  text-align: center;
+}
+.contact .content h2 {
+  font-size: 36px;
+  font-weight: 500;
+  color: #06181f;
+}
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.container .contactInfo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.container .contactInfo .box {
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+.container .contactInfo .box .icon {
+  min-width: 60px;
+  height: 60px;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 22px;
+}
+.container .contactInfo .box .text {
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  color: #06181f;
+  flex-direction: column;
+  font-weight: 300;
+}
+.container .contactInfo .box .text h3 {
+  font-weight: 500;
+  color: #007aff;
+}
+.contactForm {
+  width: 40%;
+  padding: 40px;
+  background: #ffffff;
+}
+.contactForm h2 {
+  font-size: 30px;
+  font-weight: 500;
+  color: #06181f;
+}
+.contactForm .inputbox {
+  position: relative;
+  width: 100%;
+  margin-top: 30px;
+}
+.contactForm .inputbox input,
+.contactForm .inputbox textarea {
+  width: 100%;
+  padding: 5px, 0;
+  font-size: 16px;
+  margin: 10px, 0;
+  border: none;
+  border-bottom: 2px solid #06181f;
+  outline: none;
+  resize: none;
+}
+.contactForm .inputbox span {
+  position: absolute;
+  left: 0;
+  padding: 5px, 0;
+  font-size: 16px;
+  margin: 10px, 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
+.contactForm .inputbox input:focus ~ span,
+.contactForm .inputbox input:valid ~ span,
+.contactForm .inputbox textarea:focus ~ span,
+.contactForm .inputbox textarea:valid ~ span {
+  color: #69a88d;
+  font-size: 12px;
+  transform: translateY(-20px);
+}
+.contactForm .inputbox input[type="submit"] {
+  width: 100px;
+  background: #007aff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+}
+
+/* End of contact us section */
+
+/* Footer */
+.page-footer {
+  background: #007aff;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4a00e0, #007aff);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4a00e0, #007aff);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: whitesmoke;
+  font-family: "Arvo", serif;
+}
+.page-footer a {
+  color: whitesmoke;
+}
+@media(max-width:991px)
+{
+    .contact
+    {
+        padding: 50px;
+    }
+    .container
+    {
+        flex-direction: column;
+    }
+    .container .contactInfo
+    {
+        margin-bottom: 40px;
+    }
+    .container .contactInfo,
+    .contactForm
+    {
+        width: 100%;
+    }
