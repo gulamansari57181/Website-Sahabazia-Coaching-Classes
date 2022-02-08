@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 16px;
+    overflow-x: hidden;
+    color: whitesmoke;
+    background-color: ghostwhite;
+}
+
+
+/* Navbar Start */
+
+.navbar-container {
+    position: sticky;
+    z-index: 2;
+    margin-top: 1px;
+    top: 0;
+    width: 100%;
+}
+
+.navbar-brand {
+    color: whitesmoke !important;
+    font-style: italic;
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+.navbar-bg {
+    background-color: #007aff !important;
+    border-bottom: 2px solid whitesmoke;
+}
+
+.nav-item {
+    padding: 0 15px;
+}
+
+#navbarNav a {
+    font-family: "Arvo", serif;
+    color: whitesmoke !important;
+}
+
+#navbarNav a:hover {
+    border-bottom: 3px solid whitesmoke;
+}
+
+.navbar-toggler-icon {
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+}
+
+
+/* End of Navbar */
+
+
+/* Title Heading */
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    text-align: center;
+    height: 250px;
+    background-image: url(/Images/about-us.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    float: left;
+    width: 100%;
+    text-align: center;
+    color: #007aff;
+    font-size: 40px;
+    font-weight: 800;
+    position: relative;
+}
+
+.section-separator {
+    float: left;
+    width: 100%;
+    position: relative;
+    margin: 15px 0;
+}
+
+.section-separator:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    height: 3px;
+    width: 50px;
+    border-radius: 3px;
+    z-index: 2;
+    background-color: #007aff;
+    margin-left: -25px;
+}
+
+.text-heading {
+    font-weight: bold;
+    font-size: 5vw;
+    text-align: center;
+    line-height: 0.8;
+    letter-spacing: -0.5;
+    color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* Footer */
+
+.list-unstyled li {
+    margin: 5px;
+}
+
+.page-footer {
+    background: #007aff;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4a00e0, #007aff);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4a00e0, #007aff);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: whitesmoke;
+    font-family: "Arvo", serif;
+}
+
+.page-footer a {
+    color: whitesmoke;
+}
