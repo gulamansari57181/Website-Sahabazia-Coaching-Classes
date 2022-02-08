@@ -1,426 +1,488 @@
 @import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
 }
+
 body {
-  font-size: 16px;
-  overflow-x: hidden;
-  color: whitesmoke;
-  background-color: ghostwhite;
+    font-size: 16px;
+    overflow-x: hidden;
+    color: whitesmoke;
+    background-color: ghostwhite;
 }
+
+
 /* Navbar Start */
+
 .navbar-container {
-  position: sticky;
-  z-index: 2;
-  margin-top: 1px;
-  top: 0;
-  width: 100%;
+    position: sticky;
+    z-index: 2;
+    margin-top: 1px;
+    top: 0;
+    width: 100%;
 }
 
 .navbar-brand {
-  color: whitesmoke !important;
-  font-style: italic;
-  font-size: 25px;
+    color: whitesmoke !important;
+    font-style: italic;
+    font-size: 25px;
+    margin-left: 20px;
 }
+
 .navbar-bg {
-  background-color: #007aff !important;
-  border-bottom: 2px solid whitesmoke;
+    background-color: #007aff !important;
+    border-bottom: 2px solid whitesmoke;
 }
+
 .nav-item {
-  padding: 0 15px;
+    padding: 0 15px;
 }
 
 #navbarNav a {
-  font-family: "Arvo", serif;
-  color: whitesmoke !important;
+    font-family: "Arvo", serif;
+    color: whitesmoke !important;
 }
 
 #navbarNav a:hover {
-  border-bottom: 3px solid whitesmoke;
+    border-bottom: 3px solid whitesmoke;
 }
+
 .navbar-toggler-icon {
-  border: 2px solid whitesmoke;
-  border-radius: 5px;
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
 }
+
+
 /* Start Of Slider */
+
+
 /* Slider Height  */
 
 #carouselExampleIndicators .carousel-item img {
-  object-fit: cover;
-  object-position: center;
-  overflow: hidden;
-  height: 90vh;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    height: 90vh;
 }
+
+
 /* Content on the slider */
 
 .carousel-caption {
-  position: absolute;
-  width: 60%;
-  top: 40%;
-  left: 0;
+    position: absolute;
+    width: 60%;
+    top: 40%;
+    left: 0;
 }
 
 .carousel-caption h1 {
-  height: fit-content;
-  width: fit-content;
-  font-size: 50px;
-  font-weight: bold;
-  margin-left: 20%;
-  line-height: 0.8;
-  letter-spacing: -0.5;
-
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: fit-content;
+    width: fit-content;
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: 20%;
+    line-height: 0.8;
+    letter-spacing: -0.5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .carousel-caption h4 {
-  margin-top: 20px;
-  height: fit-content;
-  width: fit-content;
-  font-size: 20px;
-  margin-left: 20%;
-  line-height: 0.8;
-  letter-spacing: -0.5;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 20px;
+    height: fit-content;
+    width: fit-content;
+    font-size: 20px;
+    margin-left: 20%;
+    line-height: 0.8;
+    letter-spacing: -0.5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 
 /* Subject Container */
 
 .heading {
-  display: flex;
-  justify-content: center;
-  margin: 30px;
+    display: flex;
+    justify-content: center;
+    margin: 30px;
 }
+
 .heading h1 {
-  float: left;
-  width: 100%;
-  text-align: center;
-  color: #007aff;
-  font-size: 40px;
-  font-weight: 800;
-  position: relative;
+    float: left;
+    width: 100%;
+    text-align: center;
+    color: #007aff;
+    font-size: 40px;
+    font-weight: 800;
+    position: relative;
 }
 
 .subject-container {
-  border-radius: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
+
 .card {
-  position: relative;
-  width: 320px;
-  height: 280px;
-
-  transition: 0.3s ease-out;
-  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.7);
-  margin: 35px;
+    position: relative;
+    width: 320px;
+    height: 280px;
+    transition: 0.3s ease-out;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.7);
+    margin: 35px;
 }
+
 .card .image-box {
-  position: relative;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
 }
-.card .image-box img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 80%;
-  display: block;
-  transition: 0.5s;
-}
-.card .content {
-  position: absolute;
-  background: #007aff;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 70px;
-  padding: 12px;
-  transition: all 0.5s cubic-bezier(0.48, -0.28, 0.41, 1.4);
-  box-sizing: border-box;
-  overflow: hidden;
-}
-.card .content h1 {
-  text-align: center;
 
-  font-style: italic;
+.card .image-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    display: block;
+    transition: 0.5s;
+}
+
+.card .content {
+    position: absolute;
+    background: #007aff;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    padding: 12px;
+    transition: all 0.5s cubic-bezier(0.48, -0.28, 0.41, 1.4);
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.card .content h1 {
+    text-align: center;
+    font-style: italic;
 }
 
 .card:hover .content {
-  width: 100%;
-  height: 75%;
-  left: 0;
-  bottom: 0;
+    width: 100%;
+    height: 75%;
+    left: 0;
+    bottom: 0;
 }
+
 .content {
-  font-family: "Arvo", serif;
+    font-family: "Arvo", serif;
 }
 
 .content p {
-  margin: 10px 0 0;
-  padding: 1em 1em;
-  transform: translateY(2em);
-  line-height: 1.3em;
-  transition: 0.3s;
-  text-align: center;
-  opacity: 0;
+    margin: 10px 0 0;
+    padding: 1em 1em;
+    transform: translateY(2em);
+    line-height: 1.3em;
+    transition: 0.3s;
+    text-align: center;
+    opacity: 0;
 }
+
 .card:hover .content p {
-  transform: translateY(0);
-  opacity: 1;
+    transform: translateY(0);
+    opacity: 1;
 }
+
 .card:hover {
-  box-shadow: 0 0 2em rgba(0, 0, 1, 0.2);
+    box-shadow: 0 0 2em rgba(0, 0, 1, 0.2);
 }
+
+
 /* End of subjects we uncover */
+
 
 /* Why choose us heading */
 
 .choose-us {
-  overflow-x: hidden !important;
-  /* width: 100vw; */
-  height: fit-content;
+    overflow-x: hidden !important;
+    /* width: 100vw; */
+    height: fit-content;
 }
+
+
 /* Specification images to make responsive */
+
 .specification-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  font-family: "Arvo", serif;
-  background-color: #007aff;
-  justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-family: "Arvo", serif;
+    background-color: #007aff;
+    justify-content: center;
 }
+
 .specification-img {
-  border: 5px solid whitesmoke;
-  border-radius: 8%;
-  margin: 25px;
-  padding: 10px;
+    border: 5px solid whitesmoke;
+    border-radius: 8%;
+    margin: 25px;
+    padding: 10px;
 }
 
 .specification-img img {
-  height: 35vh;
-  width: auto;
-  align-items: center;
-  justify-content: center;
+    height: 35vh;
+    width: auto;
+    align-items: center;
+    justify-content: center;
 }
+
 .specification-img h5 {
-  margin-left: 30px;
+    margin-left: 30px;
 }
+
+
 /* our achievements */
 
 .our-achievements {
-  display: flex;
-  color: #007aff;
-  justify-content: center;
-  align-items: center;
-  margin: 20px;
+    display: flex;
+    color: #007aff;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
 }
-.record {
-  position: relative;
-  bottom: 10px;
-  display: flex;
-  width: 25vw;
-  height: 25vh;
-  margin: 5px;
-  padding: 5px;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  border: 3px solid #007aff;
-  border-radius: 20px;
 
-  font-family: "Arvo", serif;
-  font-size: 3vw;
-  font-weight: bold;
+.record {
+    position: relative;
+    bottom: 10px;
+    display: flex;
+    width: 25vw;
+    height: 25vh;
+    margin: 5px;
+    padding: 5px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border: 3px solid #007aff;
+    border-radius: 20px;
+    font-family: "Arvo", serif;
+    font-size: 3vw;
+    font-weight: bold;
 }
+
+
 /* End of our achievements */
 
-/* Testimonial CSS*/
-section {
-  float: left;
-  position: relative;
-  padding: 30px 0;
-  background-color: ghostwhite;
 
-  z-index: 1;
-  width: 100%;
+/* Testimonial CSS*/
+
+section {
+    float: left;
+    position: relative;
+    padding: 30px 0;
+    background-color: ghostwhite;
+    z-index: 1;
+    width: 100%;
 }
+
 .section-title {
-  float: left;
-  position: relative;
-  width: 100%;
-  padding-bottom: 40px;
+    float: left;
+    position: relative;
+    width: 100%;
+    padding-bottom: 40px;
 }
+
 .section-title p {
-  text-align: center;
-  color: #cee3fa;
-  font-size: 3.5vh;
-  line-height: 20px;
-  max-width: 550px;
-  margin: 0 auto;
-  font-family: "Arvo", serif;
+    text-align: center;
+    color: #007aff;
+    font-size: 3.5vh;
+    line-height: 20px;
+    max-width: 550px;
+    margin: 0 auto;
+    font-family: "Arvo", serif;
 }
+
 .section-title h2 {
-  float: left;
-  width: 100%;
-  text-align: center;
-  color: #007aff;
-  font-size: 40px;
-  font-weight: 800;
-  position: relative;
+    float: left;
+    width: 100%;
+    text-align: center;
+    color: #007aff;
+    font-size: 40px;
+    font-weight: 800;
+    position: relative;
 }
+
 .section-separator {
-  float: left;
-  width: 100%;
-  position: relative;
-  margin: 15px 0;
+    float: left;
+    width: 100%;
+    position: relative;
+    margin: 15px 0;
 }
+
 .section-separator:before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 0;
-  height: 3px;
-  width: 50px;
-  border-radius: 3px;
-  z-index: 2;
-  background-color: #007aff;
-  margin-left: -25px;
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    height: 3px;
+    width: 50px;
+    border-radius: 3px;
+    z-index: 2;
+    background-color: #007aff;
+    margin-left: -25px;
 }
+
 .swiper-container {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .testi-item {
-  transition: all 0.3s ease-in-out;
-  transform: scale(0.9);
-  opacity: 0.9;
+    transition: all 0.3s ease-in-out;
+    transform: scale(0.9);
+    opacity: 0.9;
 }
+
 .testimonials-text {
-  padding: 75px 50px 75px;
-  overflow: hidden;
-  background: whitesmoke;
-  border: 1ps solid whitesmoke;
-  border-radius: 10px;
-  transition: all 0.3s ease-in-out;
+    padding: 75px 50px 75px;
+    overflow: hidden;
+    background: whitesmoke;
+    border: 1ps solid whitesmoke;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
 }
+
 .testimonials-text-after {
-  font-style: normal;
-  font-weight: normal;
-  text-decoration: inherit;
-  position: absolute;
-  color: #007aff;
-  opacity: 0.3;
-  font-size: 35px;
-  transition: all 400ms linear;
-  bottom: 25px;
-  right: 30px;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    position: absolute;
+    color: #007aff;
+    opacity: 0.3;
+    font-size: 35px;
+    transition: all 400ms linear;
+    bottom: 25px;
+    right: 30px;
 }
+
 .testimonials-text-before {
-  font-style: normal;
-  font-weight: normal;
-  text-decoration: inherit;
-  position: absolute;
-  color: #007aff;
-  opacity: 0.3;
-  font-size: 35px;
-  transition: all 400ms linear;
-  top: 25px;
-  left: 30px;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    position: absolute;
+    color: #007aff;
+    opacity: 0.3;
+    font-size: 35px;
+    transition: all 400ms linear;
+    top: 25px;
+    left: 30px;
 }
+
 .testimonials-text .listing-rating {
-  float: none;
-  display: inline-block;
-  margin-bottom: 12px;
+    float: none;
+    display: inline-block;
+    margin-bottom: 12px;
 }
+
 .listing-rating i {
-  color: #007aff;
+    color: #007aff;
 }
+
 .testimonials-avatar h3 {
-  font-weight: 600;
-  color: #007aff;
-  font-size: 18px;
+    font-weight: 600;
+    color: #007aff;
+    font-size: 18px;
 }
+
 .testimonials-avatar h4 {
-  font-weight: 400;
-  font-size: 12px;
-  padding-top: 6px;
-  color: #007aff;
+    font-weight: 400;
+    font-size: 12px;
+    padding-top: 6px;
+    color: #007aff;
 }
+
 .testimonials-carousel .swiper-slide {
-  padding: 30px 0;
+    padding: 30px 0;
 }
+
 .swiper-slide-active .testimonials-text {
-  background: whitesmoke;
-  box-shadow: 0 9px 26px rgba(58, 87, 135, 0.1);
+    background: whitesmoke;
+    box-shadow: 0 9px 26px rgba(58, 87, 135, 0.1);
 }
+
 .testimonials-text p {
-  color: #000000;
-  font-size: 14px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-style: italic;
-  line-height: 24px;
-  padding-bottom: 10px;
-  font-weight: 500;
+    color: #000000;
+    font-size: 14px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-style: italic;
+    line-height: 24px;
+    padding-bottom: 10px;
+    font-weight: 500;
 }
 
 .swiper-slide-active .testi-item {
-  opacity: 1;
-  transform: scale(1);
+    opacity: 1;
+    transform: scale(1);
 }
+
 .tc-pagination {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: -10px;
-  width: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10px;
+    width: 100% !important;
 }
+
 .tc-pagination_wrap {
-  position: absolute;
-  bottom: -40px;
-  left: 0;
-  width: 100%;
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    width: 100%;
 }
+
 .tc-pagination2 {
-  float: none;
-  display: inline-block;
-  padding: 14px 0;
-  background: #fff;
-  border-radius: 30px;
-  min-width: 250px;
-  border-bottom: 0;
+    float: none;
+    display: inline-block;
+    padding: 14px 0;
+    background: #fff;
+    border-radius: 30px;
+    min-width: 250px;
+    border-bottom: 0;
 }
+
 .tc-pagination .swiper-pagination-bullet,
 .tc-pagination2.swiper-pagination-bullet {
-  opacity: 1;
-  background: #007aff;
-  margin: 0 2px;
-  width: 10px;
-  height: 10px;
-  transition: all 300ms ease-in-out;
+    opacity: 1;
+    background: #007aff;
+    margin: 0 2px;
+    width: 10px;
+    height: 10px;
+    transition: all 300ms ease-in-out;
 }
+
+
 /* End of testimonial */
+
 
 /* Footer */
 
-.page-footer {
-  background: #007aff;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #4a00e0, #007aff);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #4a00e0, #007aff);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: whitesmoke;
-  font-family: "Arvo", serif;
+.list-unstyled li {
+    margin: 5px;
 }
+
+.page-footer {
+    background: #007aff;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4a00e0, #007aff);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4a00e0, #007aff);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: whitesmoke;
+    font-family: "Arvo", serif;
+}
+
 .page-footer a {
-  color: whitesmoke;
+    color: whitesmoke;
 }
